@@ -45,3 +45,5 @@ Compile and install:
 
 See the Wiki for more instructions and a list of dependencies:
 https://github.com/clementine-player/Clementine/wiki/Compiling-from-Source
+
+
