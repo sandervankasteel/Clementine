@@ -54,7 +54,7 @@ commands:
     steps:
       - run:
           name: make deb
-          command: make -j2 deb
+          command: make -j1 deb
           working_directory: bin
   copy_artifacts:
     description: Copy build artifacts
