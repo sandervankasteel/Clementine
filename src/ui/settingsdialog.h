@@ -78,6 +78,7 @@ class SettingsDialog : public QDialog {
     Page_Remote,
     Page_Wiimotedev,
     Page_Subsonic,
+    Page_Plex,
     Page_Podcasts,
     Page_GoogleDrive,
     Page_Dropbox,

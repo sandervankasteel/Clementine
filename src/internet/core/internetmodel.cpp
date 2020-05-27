@@ -42,6 +42,7 @@
 #include "internet/podcasts/podcastservice.h"
 #include "internet/somafm/somafmservice.h"
 #include "internet/subsonic/subsonicservice.h"
+#include "internet/plex/plexservice.h"
 #include "smartplaylists/generatormimedata.h"
 
 #ifdef HAVE_GOOGLE_DRIVE
@@ -94,6 +95,7 @@ InternetModel::InternetModel(Application* app, QObject* parent)
   AddService(new RadioTunesService(app, this));
   AddService(new SomaFMService(app, this));
   AddService(new IntergalacticFMService(app, this));
+  AddService(new PlexService(app, this));
 #ifdef HAVE_SPOTIFY
   AddService(new SpotifyService(app, this));
 #endif

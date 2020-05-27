@@ -35,6 +35,7 @@
 #include "internet/magnatune/magnatunesettingspage.h"
 #include "internet/podcasts/podcastsettingspage.h"
 #include "internet/subsonic/subsonicsettingspage.h"
+#include "internet/plex/settingspage.h"
 #include "library/librarysettingspage.h"
 #include "mainwindow.h"
 #include "networkproxysettingspage.h"
@@ -196,6 +197,7 @@ SettingsDialog::SettingsDialog(Application* app, BackgroundStreams* streams,
   AddPage(Page_BackgroundStreams, new BackgroundStreamsSettingsPage(this),
           providers);
   AddPage(Page_Subsonic, new SubsonicSettingsPage(this), providers);
+  AddPage(Page_Plex, new PlexSettingsPage(this), providers);
   AddPage(Page_Podcasts, new PodcastSettingsPage(this), providers);
 
   providers->sortChildren(0, Qt::AscendingOrder);
